@@ -89,11 +89,9 @@
 
     <EditText
         android:id="@+id/edit_text_weight"
-        android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-
         android:hint="Weight (Kg)" />
 
     <Button
@@ -104,25 +102,12 @@
         android:text="Calculate" />
 
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/text_view_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="8dp"
+        android:text="" />
 
-        <TextView
-            android:id="@+id/text_view_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="23.5" />
-
-        <TextView
-            android:id="@+id/text_view_quate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="" />
-
-    </LinearLayout>
 
 </LinearLayout>
