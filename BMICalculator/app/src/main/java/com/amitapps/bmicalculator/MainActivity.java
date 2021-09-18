@@ -1,6 +1,11 @@
 package com.amitapps.bmicalculator;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +16,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toast.makeText(this, "wo amit u r doign greart", Toast.LENGTH_LONG).show();
+        setContentView(R.layout.activity_main); // REad layout file and show on the screen.
 
+
+        TextView resultText = findViewById(R.id.text_view_result);
+
+        RadioButton maleButton = findViewById(R.id.radio_button_male);
+        RadioButton femaleButton = findViewById(R.id.radio_button_female);
+        EditText ageEditText = findViewById(R.id.edit_text_age);
+        EditText feetEditText = findViewById(R.id.edit_text_feet);
+        EditText inchesEditText = findViewById(R.id.edit_text_inches);
+        EditText weightEditText = findViewById(R.id.edit_text_weight);
+        Button calCulateButton = findViewById(R.id.button_calculate);
+
+
+        calCulateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "this is result", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
     }
 }
