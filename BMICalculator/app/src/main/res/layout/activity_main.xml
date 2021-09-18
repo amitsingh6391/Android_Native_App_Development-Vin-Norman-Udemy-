@@ -89,9 +89,11 @@
 
     <EditText
         android:id="@+id/edit_text_weight"
+        android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+
         android:hint="Weight (Kg)" />
 
     <Button
@@ -119,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="You have a heavily Weight." />
+            android:text="" />
 
     </LinearLayout>
 
