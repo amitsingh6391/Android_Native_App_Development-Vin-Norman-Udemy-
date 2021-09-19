@@ -4,18 +4,17 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class StartersActivity extends AppCompatActivity {
+public class MainCoursesActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_starters);
+        setContentView(R.layout.activity_main_courses);
 
-
-        ListView startersList = findViewById(R.id.list_view_starters);
-
+        ListView mainCourseActivity = findViewById(R.id.list_view_main_courses);
 
         Dish[] dishes = {
                 new Dish("Melon and lemon soup", "Fresh melon and lemon combined into creamy soup", 1199),
@@ -29,14 +28,13 @@ public class StartersActivity extends AppCompatActivity {
         };
 
 
-//insitialize a empty constructor;
-//dishOne.title ="Momos";
-//dishOne.description ="this is our des";
-//dishOne.price=99;
+        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1,
+                dishes);
 
+        mainCourseActivity.setAdapter(dishesAdapter);
 
-        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dishes);
-
-        startersList.setAdapter(dishesAdapter);
     }
+
+
 }
