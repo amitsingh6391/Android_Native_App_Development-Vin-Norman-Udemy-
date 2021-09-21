@@ -21,7 +21,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contact Name">
+            android:hint="@string/contact_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_contact_name"
@@ -40,7 +40,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Cotact Number">
+            android:hint="@string/contact_number">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_contact_number"
@@ -55,7 +55,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name">
+            android:hint="@string/name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_my_display_Name"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:inputType="textCapWords"
-                tools:text="Amit Singh" />
+                tools:text="@string/amit_singh" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,7 +72,7 @@
             android:id="@+id/check_box_include_junior"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Include Junior" />
+            android:text="@string/include_junior" />
 
         <Spinner
             android:id="@+id/spinner_job_title"
@@ -85,6 +85,11 @@
 
             />
 
+        <CheckBox
+            android:id="@+id/check_box_immediate_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/immediate_start" />
 
 
         <EditText
@@ -93,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:inputType="date"
-            android:hint="Available From Date" />
+            android:hint="@string/available_from_date" />
 
 
         <Button
@@ -103,7 +108,7 @@
             android:layout_height="wrap_content"
 
             android:layout_marginTop="12dp"
-            android:text="Preview Message" />
+            android:text="@string/preview_message" />
 
 
     </LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="48dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_messageCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#E3E08B"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/text_view_cardMessage"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+
+            tools:text="this is my card which i want to show everyone
+            we are developer we love to coding in our free time i'm Flutter Developer
+            but i m learning native in these days and i love it bcs of my teacher
+             i would like to say thanks him." />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/button_send_message"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+
+        android:text="@string/send_message"
+
+        />
+
+
+</LinearLayout>
